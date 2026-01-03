@@ -30,13 +30,14 @@
 
         <!-- Actions -->
         <div class="flex justify-center gap-4">
-            <a href="shop.html" class="bg-black text-white px-6 py-3 rounded text-sm hover:bg-gray-800">
+            
+            <router-link to="/shop" class="bg-black text-white px-6 py-3 rounded text-sm hover:bg-gray-800">
                 Continue Shopping
-            </a>
+            </router-link>
 
-            <a href="index.html" class="border px-6 py-3 rounded text-sm hover:bg-gray-100">
+            <router-link to="/" class="border px-6 py-3 rounded text-sm hover:bg-gray-100">
                 Go to Home
-            </a>
+            </router-link>
         </div>
 
     </section>
