@@ -1,12 +1,4 @@
-<script setup lang="ts">
-import Footer from '../components/global/Footer.vue';
-import Header from '../components/global/Header.vue';
-
-</script>
-
 <template>
-
-
 
     <!-- ================= Hero Section ================= -->
     <section class="bg-[#f7f5f2]">
@@ -97,8 +89,4 @@ import Header from '../components/global/Header.vue';
             </div>
         </div>
     </section>
-
-
-
-
 </template>
