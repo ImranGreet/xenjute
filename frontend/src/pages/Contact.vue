@@ -37,20 +37,20 @@
       </div>
 
       <!-- Contact Form -->
-      <div class="border rounded-lg p-6">
+      <div class="border border-gray-200 rounded-lg p-6">
         <form class="space-y-5">
 
           <input type="text"
                  placeholder="Your Name"
-                 class="border px-4 py-3 rounded w-full">
+                 class="border border-gray-200 px-4 py-3 rounded w-full">
 
           <input type="email"
                  placeholder="Your Email"
-                 class="border px-4 py-3 rounded w-full">
+                 class="border border-gray-200 px-4 py-3 rounded w-full">
 
           <textarea rows="5"
                     placeholder="Your Message"
-                    class="border px-4 py-3 rounded w-full"></textarea>
+                    class="border border-gray-200 px-4 py-3 rounded w-full"></textarea>
 
           <button class="bg-black text-white px-6 py-3 rounded text-sm hover:bg-gray-800">
             Send Message

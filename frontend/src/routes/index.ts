@@ -8,37 +8,46 @@ const routes: RouteRecordRaw[] = [
   {
     path: "/",
     component: () => import("../layouts/Client.vue"),
+    name: "client-layout",
     children: [
       {
         path: "/",
+        name: "home",
         component: () => import("../pages/Home.vue"),
       },
       {
-        path:"/shop",
+        path: "/shop",
+        name: "shop",
         component: () => import("../pages/Shop.vue"),
       },
       {
-        path:"/product",
+        path: "/product",
+        name: "product-details",
         component: () => import("../pages/ProductDetails.vue"),
       },
       {
-        path:"/cart",
+        path: "/cart",
+        name: "cart",
         component: () => import("../pages/Cart.vue"),
       },
       {
-        path:"/checkout",
+        path: "/checkout",
+        name: "checkout",
         component: () => import("../pages/Checkout.vue"),
       },
       {
-        path:"/about",
+        path: "/about",
+        name: "about",
         component: () => import("../pages/About.vue"),
       },
       {
-        path:"success",
+        path: "success",
+        name: "success",
         component: () => import("../pages/Success.vue"),
       },
       {
-        path:"/contact",
+        path: "/contact",
+        name: "contact",
         component: () => import("../pages/Contact.vue"),
       }
     ],

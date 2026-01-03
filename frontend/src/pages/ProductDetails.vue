@@ -6,13 +6,36 @@
         <div class="grid md:grid-cols-2 gap-12">
 
             <!-- Product Images -->
-            <div>
-                <img src="https://via.placeholder.com/600x500" alt="Jute Hand Bag" class="rounded-lg mb-4">
-
+            <div class="space-y-6">
+                <div class="relative overflow-hidden rounded-xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Product image"
+                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+                </div>
                 <div class="grid grid-cols-3 gap-4">
-                    <img src="https://via.placeholder.com/200x150" class="rounded border">
-                    <img src="https://via.placeholder.com/200x150" class="rounded border">
-                    <img src="https://via.placeholder.com/200x150" class="rounded border">
+
+                    <div class="relative overflow-hidden rounded-xl shadow-lg group">
+                        <img src="https://images.pexels.com/photos/3403861/pexels-photo-3403861.jpeg"
+                            alt="Product image"
+                            class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-xl shadow-lg group">
+                        <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Product image"
+                            class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300">
+                        </div>
+                    </div>
+                    <div class="relative overflow-hidden rounded-xl shadow-lg group">
+                        <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="Product image"
+                            class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300">
+                        </div>
+                    </div>
                 </div>
             </div>
 

@@ -2,7 +2,7 @@
     <!-- ================= Footer ================= -->
     <footer class="border-t">
         <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-            © 2026 JuteLeather. All rights reserved.
+            © {{ new Date().getFullYear() }} JuteLeather. All rights reserved.
         </div>
     </footer>
 </template>

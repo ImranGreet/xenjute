@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import type router from '../routes';
+
+</script>
+
 <template>
 
     <!-- ================= Hero Section ================= -->
@@ -12,14 +17,15 @@
                     Crafted with natural jute and premium leather for timeless style,
                     durability, and sustainability.
                 </p>
-                <a href="#" class="inline-block bg-black text-white px-6 py-3 text-sm rounded hover:bg-gray-800">
+                <router-link to="/shop"
+                    class="inline-block bg-black text-white px-6 py-3 text-sm rounded hover:bg-gray-800">
                     Shop Now
-                </a>
+                </router-link>
             </div>
 
             <div>
-                <img src="https://via.placeholder.com/600x400" alt="Bag Collection"
-                    class="rounded-lg w-full object-cover" />
+                <img src="https://images.unsplash.com/photo-1494578151111-d35ec4c84e2b?q=80&w=1173&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Bag Collection" class="rounded-lg w-full object-cover" />
             </div>
 
         </div>
@@ -34,22 +40,37 @@
         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
 
             <!-- Product Card -->
-            <div class="border rounded-lg p-4">
-                <img src="https://via.placeholder.com/300x250" alt="" class="mb-4 rounded">
+            <div class="border border-gray-200 rounded-lg p-4">
+                <div class="relative overflow-hidden rounded-xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Product image"
+                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+                </div>
                 <h4 class="font-medium">Jute Hand Bag</h4>
                 <p class="text-sm text-gray-600">Natural jute with leather handle</p>
                 <p class="mt-2 font-semibold">$45</p>
             </div>
 
-            <div class="border rounded-lg p-4">
-                <img src="https://via.placeholder.com/300x250" alt="" class="mb-4 rounded">
+            <div class="border border-gray-200 rounded-lg p-4">
+                <div class="relative overflow-hidden rounded-xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Product image"
+                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+                </div>
                 <h4 class="font-medium">Leather Office Bag</h4>
                 <p class="text-sm text-gray-600">Premium leather finish</p>
                 <p class="mt-2 font-semibold">$85</p>
             </div>
 
-            <div class="border rounded-lg p-4">
-                <img src="https://via.placeholder.com/300x250" alt="" class="mb-4 rounded">
+            <div class="border border-gray-200 rounded-lg p-4">
+                <div class="relative overflow-hidden rounded-xl shadow-lg group">
+                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="Product image"
+                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
+                </div>
                 <h4 class="font-medium">Jute Shoulder Bag</h4>
                 <p class="text-sm text-gray-600">Eco-friendly & stylish</p>
                 <p class="mt-2 font-semibold">$55</p>

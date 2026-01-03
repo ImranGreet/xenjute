@@ -7,10 +7,10 @@
             </h1>
 
             <nav class="space-x-6 text-sm">
-                <a href="#" class="hover:text-black">Home</a>
-                <a href="#" class="hover:text-black">Shop</a>
-                <a href="#" class="hover:text-black">About</a>
-                <a href="#" class="hover:text-black">Contact</a>
+                <router-link to="/" class="hover:text-black">Home</router-link>
+                <router-link to="/shop" class="hover:text-black">Shop</router-link>
+                <router-link to="/about" class="hover:text-black">About</router-link>
+                <router-link to="/contact" class="hover:text-black">Contact</router-link>
             </nav>
         </div>
     </header>
