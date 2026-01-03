@@ -1,19 +1,6 @@
 <template>
 
 
-  <!-- ================= Header ================= -->
-  <header class="border-b">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-semibold">JuteLeather</h1>
-
-      <nav class="space-x-6 text-sm">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="cart.html" class="font-medium">Cart</a>
-      </nav>
-    </div>
-  </header>
-
   <!-- ================= Cart Section ================= -->
   <section class="max-w-7xl mx-auto px-4 py-16">
     <h2 class="text-3xl font-bold mb-8">
@@ -110,10 +97,10 @@
           </div>
         </div>
 
-        <a href="checkout.html"
+        <router-link to="/checkout"
            class="block text-center bg-black text-white py-3 mt-6 rounded text-sm hover:bg-gray-800">
           Proceed to Checkout
-        </a>
+        </router-link>
       </div>
 
     </div>

@@ -1,11 +1,23 @@
 @import "tailwindcss";
 
-*{
+* {
   font-family: "Lato", sans-serif;
   font-style: normal;
-
 }
 
-button{
-    cursor: pointer;
+button {
+  cursor: pointer;
+}
+
+input:focus-visible {
+  outline: none;
+}
+textarea:focus-visible {
+  outline: none;
+}
+
+input,
+select,
+textarea {
+  border-color: oklch(92.8% 0.006 264.531);
 }

@@ -90,7 +90,7 @@
 
     <!-- ================= Additional Info ================= -->
     <section class="bg-gray-50 py-12">
-        <div class="max-w-4xl mx-auto px-4">
+        <div class="max-w-7xl mx-auto px-4">
             <h3 class="text-xl font-semibold mb-4">
                 Product Care
             </h3>

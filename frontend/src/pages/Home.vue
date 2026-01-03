@@ -1,4 +1,16 @@
 <script setup lang="ts">
+import { storeToRefs } from 'pinia';
+import useProductStore from '../store/product';
+import { onMounted } from 'vue';
+
+
+const productsStore = useProductStore();
+const { retrieveProducts } = productsStore;
+const { products } = storeToRefs(productsStore);
+
+onMounted(async () => {
+    await retrieveProducts();
+})
 
 </script>
 
@@ -39,96 +51,19 @@
         <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
 
             <!-- Product Card -->
-            <div class="border border-gray-200 rounded-lg p-4">
+            <div class="border border-gray-200 rounded-lg p-4" v-for="product in products" :key="product.id">
                 <div class="relative overflow-hidden rounded-xl shadow-lg group">
                     <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Product image"
                         class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                 </div>
-                <h4 class="font-medium">Jute Hand Bag</h4>
+                <h4 class="font-medium">{{ product.name }}</h4>
                 <p class="text-sm text-gray-600">Natural jute with leather handle</p>
                 <p class="mt-2 font-semibold">$45</p>
             </div>
 
-            <div class="border border-gray-200 rounded-lg p-4">
-                <div class="relative overflow-hidden rounded-xl shadow-lg group">
-                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                </div>
-                <h4 class="font-medium">Leather Office Bag</h4>
-                <p class="text-sm text-gray-600">Premium leather finish</p>
-                <p class="mt-2 font-semibold">$85</p>
-            </div>
 
-            <div class="border border-gray-200 rounded-lg p-4">
-                <div class="relative overflow-hidden rounded-xl shadow-lg group">
-                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                </div>
-                <h4 class="font-medium">Jute Shoulder Bag</h4>
-                <p class="text-sm text-gray-600">Eco-friendly & stylish</p>
-                <p class="mt-2 font-semibold">$55</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-4">
-                <div class="relative overflow-hidden rounded-xl shadow-lg group">
-                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                </div>
-                <h4 class="font-medium">Jute Shoulder Bag</h4>
-                <p class="text-sm text-gray-600">Eco-friendly & stylish</p>
-                <p class="mt-2 font-semibold">$55</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-4">
-                <div class="relative overflow-hidden rounded-xl shadow-lg group">
-                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                </div>
-                <h4 class="font-medium">Jute Shoulder Bag</h4>
-                <p class="text-sm text-gray-600">Eco-friendly & stylish</p>
-                <p class="mt-2 font-semibold">$55</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-4">
-                <div class="relative overflow-hidden rounded-xl shadow-lg group">
-                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                </div>
-                <h4 class="font-medium">Jute Shoulder Bag</h4>
-                <p class="text-sm text-gray-600">Eco-friendly & stylish</p>
-                <p class="mt-2 font-semibold">$55</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-4">
-                <div class="relative overflow-hidden rounded-xl shadow-lg group">
-                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                </div>
-                <h4 class="font-medium">Jute Shoulder Bag</h4>
-                <p class="text-sm text-gray-600">Eco-friendly & stylish</p>
-                <p class="mt-2 font-semibold">$55</p>
-            </div>
-            <div class="border border-gray-200 rounded-lg p-4">
-                <div class="relative overflow-hidden rounded-xl shadow-lg group">
-                    <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
-                    <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                </div>
-                <h4 class="font-medium">Jute Shoulder Bag</h4>
-                <p class="text-sm text-gray-600">Eco-friendly & stylish</p>
-                <p class="mt-2 font-semibold">$55</p>
-            </div>
 
         </div>
     </section>

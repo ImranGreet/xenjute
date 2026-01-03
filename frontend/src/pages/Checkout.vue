@@ -1,18 +1,5 @@
 <template>
-    
 
-  <!-- ================= Header ================= -->
-  <header class="border-b">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-xl font-semibold">JuteLeather</h1>
-
-      <nav class="space-x-6 text-sm">
-        <a href="index.html">Home</a>
-        <a href="shop.html">Shop</a>
-        <a href="cart.html">Cart</a>
-      </nav>
-    </div>
-  </header>
 
   <!-- ================= Checkout ================= -->
   <section class="max-w-7xl mx-auto px-4 py-16">
@@ -122,7 +109,4 @@
 
     </div>
   </section>
-
-
-
 </template>
