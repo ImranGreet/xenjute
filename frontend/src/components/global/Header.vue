@@ -2,9 +2,9 @@
     <!-- ================= Header / Navbar ================= -->
     <header class="border-b border-gray-300 bg-white">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-semibold tracking-wide">
+            <router-link to="/" class="text-xl font-semibold tracking-wide">
                 JuteLeather
-            </h1>
+            </router-link>
 
             <nav class="space-x-6 text-sm">
                 <router-link to="/" class="hover:text-black">Home</router-link>

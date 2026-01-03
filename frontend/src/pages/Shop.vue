@@ -11,6 +11,7 @@
         </div>
     </section>
 
+    
     <!-- ================= Filters ================= -->
     <section class="max-w-7xl mx-auto px-4 py-8">
         <div class="flex flex-wrap gap-3 justify-center text-sm">

@@ -1,8 +1,12 @@
 <template>
-
-
     <!-- ================= Product Details ================= -->
     <section class="max-w-7xl mx-auto px-4 py-16">
+        <button variant="default" class="self-start mb-0 rounded text-white  bg-red-400 hover:bg-red-300 shadow-sm"
+            @click="backToPrevious">
+            <svg class="w-10 h-10">
+                <use href="#back-icon" />
+            </svg>
+        </button>
         <div class="grid md:grid-cols-2 gap-12">
 
             <!-- Product Images -->
@@ -97,7 +101,10 @@
             </p>
         </div>
     </section>
-
-
-
 </template>
+
+<script lang="ts" setup>
+let backToPrevious = () => {
+    window.history.back();
+};
+</script>

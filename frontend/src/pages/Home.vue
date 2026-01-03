@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import type router from '../routes';
 
 </script>
 
