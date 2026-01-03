@@ -1,6 +1,6 @@
 <template>
     <!-- ================= Header / Navbar ================= -->
-    <header class="border-b">
+    <header class="border-b border-gray-300 bg-white">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
             <h1 class="text-xl font-semibold tracking-wide">
                 JuteLeather

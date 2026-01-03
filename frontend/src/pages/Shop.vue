@@ -14,16 +14,16 @@
     <!-- ================= Filters ================= -->
     <section class="max-w-7xl mx-auto px-4 py-8">
         <div class="flex flex-wrap gap-3 justify-center text-sm">
-            <button class="px-4 py-2 border rounded-full bg-black text-white">
+            <button class="px-4 py-2 border border-gray-200 rounded-full bg-black text-white">
                 All
             </button>
-            <button class="px-4 py-2 border rounded-full hover:bg-gray-100">
+            <button class="px-4 py-2 border border-gray-200 rounded-full hover:bg-gray-100">
                 Jute Bags
             </button>
-            <button class="px-4 py-2 border rounded-full hover:bg-gray-100">
+            <button class="px-4 py-2 border border-gray-200 rounded-full hover:bg-gray-100">
                 Leather Bags
             </button>
-            <button class="px-4 py-2 border rounded-full hover:bg-gray-100">
+            <button class="px-4 py-2 border border-gray-200 rounded-full hover:bg-gray-100">
                 Office Bags
             </button>
         </div>
@@ -38,7 +38,7 @@
                 <div class="relative overflow-hidden rounded-xl shadow-lg group">
                     <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                        class="w-full h-48 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                 </div>
                 <h3 class="font-medium">Jute Hand Bag</h3>
@@ -55,7 +55,7 @@
                 <div class="relative overflow-hidden rounded-xl shadow-lg group">
                     <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                        class="w-full h-48 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                 </div>
                 <h3 class="font-medium">Jute Hand Bag</h3>
@@ -72,7 +72,7 @@
                 <div class="relative overflow-hidden rounded-xl shadow-lg group">
                     <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                        class="w-full h-48 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                 </div>
                 <h3 class="font-medium">Jute Shoulder Bag</h3>
@@ -89,7 +89,7 @@
                 <div class="relative overflow-hidden rounded-xl shadow-lg group">
                     <img src="https://images.unsplash.com/photo-1663776376262-1d12c353f789?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="Product image"
-                        class="w-full h-64 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
+                        class="w-full h-48 md:h-80 object-cover group-hover:scale-110 transition-transform duration-500">
                     <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                 </div>
                 <h3 class="font-medium">Leather Travel Bag</h3>
