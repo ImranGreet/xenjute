@@ -8,6 +8,8 @@ const productsStore = useProductStore();
 const { retrieveProducts } = productsStore;
 const { products } = storeToRefs(productsStore);
 
+
+
 onMounted(async () => {
     await retrieveProducts();
 })
@@ -59,8 +61,8 @@ onMounted(async () => {
                     <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
                 </div>
                 <h4 class="font-medium">{{ product.name }}</h4>
-                <p class="text-sm text-gray-600">Natural jute with leather handle</p>
-                <p class="mt-2 font-semibold">$45</p>
+                <p class="text-sm text-gray-600">{{ product.description }}</p>
+                <p class="mt-2 font-semibold">{{ product.price }}</p>
             </div>
 
 

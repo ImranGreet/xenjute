@@ -75,7 +75,8 @@
 
                 <!-- Buttons -->
                 <div class="flex gap-4">
-                    <button class="bg-black text-white px-6 py-3 rounded text-sm hover:bg-gray-800">
+                    <button @click="addProductToCart(1)"
+                        class="bg-black text-white px-6 py-3 rounded text-sm hover:bg-gray-800">
                         Add to Cart
                     </button>
 
@@ -104,7 +105,29 @@
 </template>
 
 <script lang="ts" setup>
+import { onMounted } from 'vue';
+import useCartStore from '../store/cart';
+import useProductStore from '../store/product';
+import { useRoute, useRouter } from 'vue-router';
+
+const route = useRoute();
+const router = useRouter();
+
 let backToPrevious = () => {
-    window.history.back();
+    router.back();
 };
+
+
+const cartStore = useCartStore();
+const { addProductToCart } = cartStore;
+const productInfo = useProductStore();
+const { productDetails } = productInfo;
+
+onMounted(async () => {
+    const id = route.params.id;
+    if (id && typeof id === 'string') {
+        await productDetails(Number(id));
+    }
+})
+
 </script>

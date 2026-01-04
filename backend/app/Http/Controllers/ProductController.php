@@ -12,9 +12,8 @@ class ProductController extends Controller
         return Product::with('category')->where('status', true)->get();
     }
 
-    public function show($slug)
+    public function show($productId)
     {
-        return Product::with('category')->where('slug', $slug)->firstOrFail();
+        return Product::with('category')->where('id', $productId)->firstOrFail();
     }
 }
- 

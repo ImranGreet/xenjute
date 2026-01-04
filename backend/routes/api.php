@@ -20,7 +20,7 @@ Route::controller(CartController::class)->group(function () {
 
 Route::controller(ProductController::class)->group(function () {
     Route::get('products', 'index');
-    Route::get('products/{slug}', 'show');
+    Route::get('products/{productId}', 'show');
 });
 
 

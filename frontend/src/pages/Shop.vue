@@ -46,7 +46,7 @@
                 <p class="text-sm text-gray-600">Natural jute with leather strap</p>
                 <div class="flex justify-between items-center mt-3">
                     <span class="font-semibold">$45</span>
-                    <router-link to="/product" class="text-sm underline">
+                    <router-link to="/product/1" class="text-sm underline">
                         View
                     </router-link>
                 </div>
@@ -63,7 +63,7 @@
                 <p class="text-sm text-gray-600">Natural jute with leather strap</p>
                 <div class="flex justify-between items-center mt-3">
                     <span class="font-semibold">$45</span>
-                    <router-link to="/product" class="text-sm underline">
+                    <router-link to="/product/1" class="text-sm underline">
                         View
                     </router-link>
                 </div>
@@ -80,7 +80,7 @@
                 <p class="text-sm text-gray-600">Eco-friendly daily use</p>
                 <div class="flex justify-between items-center mt-3">
                     <span class="font-semibold">$55</span>
-                    <router-link to="/product" class="text-sm underline">
+                    <router-link to="/product/1" class="text-sm underline">
                         View
                     </router-link>
                 </div>
@@ -97,7 +97,7 @@
                 <p class="text-sm text-gray-600">Strong & stylish</p>
                 <div class="flex justify-between items-center mt-3">
                     <span class="font-semibold">$120</span>
-                    <router-link to="/product" class="text-sm underline">
+                    <router-link to="/product/1" class="text-sm underline">
                         View
                     </router-link>
                 </div>

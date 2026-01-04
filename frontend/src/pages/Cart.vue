@@ -13,7 +13,7 @@
       <div class="lg:col-span-2 space-y-6">
 
         <!-- Cart Item -->
-        <div class="flex gap-6 border rounded-lg p-4">
+        <div class="flex gap-6 border border-gray-200 rounded-lg p-4">
           <img
             src="https://images.unsplash.com/photo-1615485737442-7d6ab9f64db9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Jute Hand Bag" class="rounded w-20 h-20">
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Cart Item -->
-        <div class="flex gap-6 border rounded-lg p-4">
+        <div class="flex gap-6 border border-gray-200 rounded-lg p-4">
           <img
             src="https://images.unsplash.com/photo-1615485737442-7d6ab9f64db9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="Leather Office Bag" class="rounded w-20 h-20">
@@ -69,7 +69,7 @@
       </div>
 
       <!-- Order Summary -->
-      <div class="border rounded-lg p-6 h-fit">
+      <div class="border border-gray-200 rounded-lg p-6 h-fit">
         <h3 class="text-xl font-semibold mb-6">
           Order Summary
         </h3>

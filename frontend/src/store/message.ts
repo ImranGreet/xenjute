@@ -23,6 +23,10 @@ const useMessageStore = defineStore("messageStore", () => {
       message: userMessages.value,
     });
     console.log(response, "res");
+    name.value = "";
+    email.value = "";
+    phone.value = "";
+    userMessages.value = "";
   };
 
   return {

@@ -75,7 +75,7 @@
       </div>
 
       <!-- Order Summary -->
-      <div class="border rounded-lg p-6 h-fit">
+      <div class="border border-gray-200 rounded-lg p-6 h-fit">
         <h3 class="text-xl font-semibold mb-6">
           Order Summary
         </h3>
