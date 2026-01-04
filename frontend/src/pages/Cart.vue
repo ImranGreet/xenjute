@@ -14,9 +14,9 @@
 
         <!-- Cart Item -->
         <div class="flex gap-6 border rounded-lg p-4">
-          <img src="https://via.placeholder.com/150x120"
-               alt="Jute Hand Bag"
-               class="rounded">
+          <img
+            src="https://images.unsplash.com/photo-1615485737442-7d6ab9f64db9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Jute Hand Bag" class="rounded w-20 h-20">
 
           <div class="flex-1">
             <h3 class="font-medium">Jute Hand Bag</h3>
@@ -27,10 +27,7 @@
             <div class="flex items-center justify-between mt-4">
               <div class="flex items-center gap-2">
                 <label class="text-sm">Qty</label>
-                <input type="number"
-                       value="1"
-                       min="1"
-                       class="w-20 border px-3 py-1 rounded">
+                <input type="number" value="1" min="1" class="w-20 border px-3 py-1 rounded">
               </div>
 
               <span class="font-semibold">$45</span>
@@ -44,9 +41,9 @@
 
         <!-- Cart Item -->
         <div class="flex gap-6 border rounded-lg p-4">
-          <img src="https://via.placeholder.com/150x120"
-               alt="Leather Office Bag"
-               class="rounded">
+          <img
+            src="https://images.unsplash.com/photo-1615485737442-7d6ab9f64db9?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Leather Office Bag" class="rounded w-20 h-20">
 
           <div class="flex-1">
             <h3 class="font-medium">Leather Office Bag</h3>
@@ -57,10 +54,7 @@
             <div class="flex items-center justify-between mt-4">
               <div class="flex items-center gap-2">
                 <label class="text-sm">Qty</label>
-                <input type="number"
-                       value="1"
-                       min="1"
-                       class="w-20 border px-3 py-1 rounded">
+                <input type="number" value="1" min="1" class="w-20 border px-3 py-1 rounded">
               </div>
 
               <span class="font-semibold">$85</span>
@@ -98,7 +92,7 @@
         </div>
 
         <router-link to="/checkout"
-           class="block text-center bg-black text-white py-3 mt-6 rounded text-sm hover:bg-gray-800">
+          class="block text-center bg-black text-white py-3 mt-6 rounded text-sm hover:bg-gray-800">
           Proceed to Checkout
         </router-link>
       </div>

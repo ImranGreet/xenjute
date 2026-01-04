@@ -32,6 +32,7 @@ Route::controller(OrderController::class)->group(function () {
 
 Route::controller(ContactController::class)->group(function () {
     Route::post('contact', 'store');
+    Route::get('/messages','index');
 });
 
 

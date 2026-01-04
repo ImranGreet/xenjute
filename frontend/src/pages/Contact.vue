@@ -38,16 +38,18 @@
 
       <!-- Contact Form -->
       <div class="border border-gray-200 rounded-lg p-6">
-        <form class="space-y-5">
+        <form @submit.prevent="postMessage" class="space-y-5">
 
           <input type="text" placeholder="Your Name" class="border border-gray-200 px-4 py-3 rounded w-full"
             v-model="name">
 
+          <input type="tel" placeholder="Your Phone Number" class="border border-gray-200 px-4 py-3 rounded w-full"
+            v-model="phone">
           <input type="email" placeholder="Your Email" class="border border-gray-200 px-4 py-3 rounded w-full"
             v-model="email">
 
           <textarea rows="5" placeholder="Your Message" class="border border-gray-200 px-4 py-3 rounded w-full"
-            v-model="message"></textarea>
+            v-model="userMessages"></textarea>
 
           <button class="bg-black text-white px-6 py-3 rounded text-sm hover:bg-gray-800">
             Send Message
@@ -64,9 +66,10 @@
 </template>
 
 <script lang="ts" setup>
-import { ref } from 'vue';
+import { storeToRefs } from 'pinia';
+import useMessageStore from '../store/message';
 
-let name = ref<string>("");
-let email = ref<string>("");
-let message = ref<string>("");
+const messageStore = useMessageStore();
+const { postMessage } = messageStore;
+const { name, email, phone, userMessages } = storeToRefs(messageStore);
 </script>

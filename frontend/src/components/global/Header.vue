@@ -15,3 +15,14 @@
         </div>
     </header>
 </template>
+
+<style scoped>
+.router-link-exact-active {
+    font-weight: 600;
+    letter-spacing: 0.48px;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+    transition: all 0.3s ease-in-out;
+}
+</style>

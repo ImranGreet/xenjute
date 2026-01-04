@@ -12,4 +12,13 @@ class ContactController extends Controller
         $contact = Contact::create($request->all());
         return response()->json(['message' => 'Message sent successfully', 'contact' => $contact]);
     }
+
+    public function index()
+    {
+        $messages = Contact::all();
+        return response()->json([
+            "success" => true,
+            "messages" => $messages,
+        ]);
+    }
 }
